@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- "Ctrl + ;" para criar comentários no código html. Especifica o tipo de documento.-->
+<html lang="pt-BR">
+    <!-- tag container, propriedade "lang" informa ao navegador/search engine o idioma da pagina -->
+<head>
+    <meta charset="UTF-8">
+    <!-- cabeçalho da página e em seguida, metadados da página: "charset" define os caracteres importantes para a acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ajuda a fazer o site se adaptar a celulares e tablets (o que realmente faz isso é o CSS posteriormente, mas é importante "avisar") -->
+    <title>Estrutura básica - é a primeira aula!</title>
+    <!-- título da aba do navegador -->
+</head>
+
+<body>
+    <!-- corpo do site, tudo que deve estar visível -->
+     <header>
+        <!-- "header" é uma tag container para inserir o título/cabeçalho -->
+         <h1>
+            Hello, world. Bem vindos ao site!
+            <!-- é o título principal, usamos apenas uma vez -->
+             <!-- vai até h6, o h2 em diante pode ser repetido diversas vezes, mas o h1 (até por razoes de SEO) deve ser único por página-->
+         </h1>
+     </header>
+
+     <main>
+        <!-- identificar o conteúdo principal da página -->
+         <h2>
+            Sobre este site:
+            <!-- subtítulo -->
+             <p>bora ver onde aparece esse elemento</p>
+             <p>e o que acontece
+               quando fazemos algo assim
+               no código
+             </p>
+             <!-- não acontece nada quando quebramos o código do jeito acima, fica feiosão no html só. -->
+         </h2>
+         <h2>
+            Lista de coisas que estou aprendendo:
+            <ol>
+                <!-- lista numerada = ordered list, faz todo sentido né? -->
+                 <li>quem será esse amigo?</li>
+                 <!-- "li" tag significa list item -->
+                 escrever do lado de fora quebra?
+                 <!-- não quebra, só adiciona outra linha em baixo fora da lista -->
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Git e Github</li>
+                  <li></li>
+                  <li>Power Apps</li>
+                  <li>SaaS</li>
+                  <li>consumo de API</li>
+                  <li>Tailwind</li>
+            </ol>
+         </h2>
+         <h2>
+            Lista não ordenada:
+            <!-- pode-se escrever, por exemplo "li*5" e então uma operação (extensão/vscode) ocorrerá, -->
+            <ul>
+                <!-- "ul" e "ol" podem receber o atributo "type=" em seguida para diferenciar -->
+                Ferramentas que utilizaremos no curso
+                <li>VSCode</li>
+                <li>Node.JS</li>
+                <li>Git e Github</li>
+                <li>Gitbook</li>
+                <li>Google Classroom</li>
+                <li>Discord e Zoom</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+         </h2>
+
+         <h2>
+            <img src="https://imgs.search.brave.com/Ohm2-5uKYL8IHo7UoOYKH8LgpThCtyviRFnRh1hkP-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UxL2Uw/L2FiL2UxZTBhYjZk/NDkwZTQxMDk2ZTg2/ZTVlOWU1YWJmZjE2/LmpwZw" alt="exemplo de código html com texto ''olá mundo!'' em inglês">
+            <!-- tag "img" não tem fechamento. atributos são "src=" e "alt=" -->
+             <img src="file:///localhost/C:/Users/Campanella/Downloads/@Vai-na-Web/code%20text%20editor.PNG" alt="captura de tela mostrando painel de seleção de editor padrão a ser usado pelo Git.">
+             <!-- disseram para não fazer alterações no tamanho da imagem em html por não ser mais uma boa pratica no mercado. Alteração deve ser feita apenas no CSS!-->
+         </h2>
+
+     </main>
+
+     <footer>
+        <!-- indica a parte final da página -->
+         <h2>Links úteis:</h2>
+         <p>Visite o site da <a href="" target="_blank">W3 Schools</a> para aprender mais sobre html.</p>
+     </footer>
+</body>
+</html>
