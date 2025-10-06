@@ -1,6 +1,22 @@
 //seletores: propriedades: valores
+// declaração de VARIÁVEIS: inicia com $, sintaxe é "$fonte-padrão: [sejaoquefor];"
+
+// PERGUNTAR: qual é a ordem de preferência? ordem no código ou como em D&D/MTG = "regra específica vence regra geral" (tem precedencia sobre)
+// descobri que na realidade é um conceito do direito (LOL unsurprising), princípio "lex specialis derogat legi generali"
+
+// Seletor global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Tag
+// lembrando que <tag> sem símbolo é totalmente modificada, todas presentes no html são SELECIONADAS
 header {
-  background-color: red;
+  background-color: teal;
+}
+body {
+  background-color: lightgray;
 }
 img {
   width: 300px;
@@ -8,11 +24,31 @@ img {
 h2 {
   background-color: burlywood;
 }
-* {
-  margin: 0;
-  pad: 0;
-  box-sizing: border-box;
-}
+
+// Medidas
+// Fixas: PX (Não mudam)
+// Relativas: %, VW, VH (Mudam conforme o tamanho da tela /(vw) Viewport width - Viewport height (vh))
+// Relativas = EM , REM | Relativas ao tamanho da fonte
+
+// seletor precedido de . (".seletor") remete a uma classe criada no html
+// class  é um seletor que podemos repetir/reutilizar
 .card {
-     background-color: dimgray;
+     background-color: lightseagreen;
+     border: solid;
+     border-radius: 8px;
+     padding: 10px;
+     width: 27vw; //medida relativa do viewport
+
+     img {
+      padding: 8px;
+      width: 100%;
+      //height: 40vh; //é útil quando a imagem não carrega, mantém certo tamanho, mas não gostei do fato de que distorce (possibilidade) a imagem. Manterei desabilitado até descobrir como manter o aspect ratio
+     }
+     button {
+      background-color:lightgreen;
+      width:100%;
+      padding:5px;
+     } //não foi encontrado para configuração de classe, portanto removi. Depois do "watch CSS" encontrei então tudo certo!
 }
+
+// vish. "dimgray" é uma cor OK pra usar, mas conforme você digita oferecem MUITOS NOMES DE CORES é bem daora hdjksahkjdha, curti d+

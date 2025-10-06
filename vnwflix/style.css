@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: teal;
+}
+
+body {
+  background-color: lightgray;
+}
+
+img {
+  width: 300px;
+}
+
+h2 {
+  background-color: burlywood;
+}
+
+.card {
+  background-color: lightseagreen;
+  border: solid;
+  border-radius: 8px;
+  padding: 10px;
+  width: 27vw;
+}
+.card img {
+  padding: 8px;
+  width: 100%;
+}
+.card button {
+  background-color: lightgreen;
+  width: 100%;
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */

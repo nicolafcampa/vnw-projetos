@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: rgba(140, 0, 255, 0.815);
+}
+
+h2 {
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card {
+  border: solid;
+  /* Medida fixa (PX)/
+  border-radius: 10px;
+  padding: 10px;
+  / Medida relativa - viewport /
+  width: 30vw;
+
+  img {
+    / Medida relativa - porcentagem */
+  width: 100%;
+  height: 40vh;
+}
+
+button {
+  background-color: green;
+  width: 100%;
+}/*# sourceMappingURL=style_cores_padrao.css.map */

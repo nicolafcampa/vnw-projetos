@@ -1,0 +1,72 @@
+// seletor { propriedade: valor; }
+
+// Seletor Global
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+// CORES
+$tyrian-purple: #5f0f40ff;
+$carmine: #9a031eff;
+$ut-orange: #fb8b24ff;
+$spanish-orange: #e36414ff;
+$midnight-green: #0f4c5cff;
+
+// FONTES ~~ TIPOGRAFIA
+body{
+    font-family: "Montserrat", sans-serif;    
+//.montserrat-<uniquifier> {
+//  font-family: "Montserrat";
+//  font-optical-sizing: auto;
+//  font-weight: <weight>;
+//  font-style: normal;
+//}
+}
+
+
+// Tag
+header {
+    background-color: rgba(140, 0, 255, 0.815);
+    // para fazer as cores, podemos nomeá-las em inglês, usar rgb (para cores sólidas) ou ainda RGBA (para apresentar opacidade/alfa)
+    // hexadecimal
+    // outra opção para escolher cores= começa com #, vai de 0-9 e também trabalha com letras de a-f
+    // https://coolors.co/?home
+}
+
+h2 {
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+// Medidas
+
+// Fixas: PX (Não mudam)
+// Relativas: %, VW, VH (Mudam conforme o tamanho da tela /(vw) Viewport width - Viewport height (vh))
+
+// class  é um seletor que podemos repetir/reutilizar
+.card {
+  border: solid;
+  /* Medida fixa (PX)/
+  border-radius: 10px;
+  padding: 10px;
+  / Medida relativa - viewport /
+  width: 30vw;
+
+  img {
+    / Medida relativa - porcentagem */
+    width: 100%;
+    height: 40vh;
+  }
+
+  button {
+    background-color: green;
+    width: 100%;
+  }
+
+
+// RESUMO
+// PX = Fixas | Sempre igual, independente da tela
+// RELATIVAS = % , VW , VH | Mudam conforme o tamanho da tela / viewport
+// Relativas = EM , REM | Relativas ao tamanho da fonte
